@@ -22,7 +22,6 @@ setup(
             '{{cookiecutter.repo_name}} = {{cookiecutter.repo_name}}.cli:main',
         ],
     },{% endif %}
-    test_suite='nose.collector',
     license=open('LICENSE').read(),
 )
 
