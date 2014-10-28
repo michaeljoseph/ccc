@@ -49,4 +49,4 @@ Generate the documentation with:
 To monitor changes to Python files and execute flake8 and nosetests
 automatically, execute the following from the root project directory:
 
-    stir
+    tdaemon -t py
