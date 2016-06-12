@@ -1,0 +1,11 @@
+changes < 1.0.0
+flake8 < 3.0.0
+pytest-mock < 1.0.0
+pytest-cov < 1.8.0 
+pytest-watch < 5.0.0
+python-coveralls < 3.0.0
+sphinx < 2.0.0
+sphinx-bootstrap-theme < 1.0.0
+travis-solo < 1.0.0
+tox < 3.0.0
+wheel < 1.0.0
