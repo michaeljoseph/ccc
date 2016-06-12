@@ -1,3 +1,4 @@
+import io
 import re
 from setuptools import setup
 
@@ -14,14 +15,11 @@ setup(
     url=metadata['url'],
     packages=['{{cookiecutter.repo_name}}'],
     include_package_data=True,
-    install_requires=[
-    {% if cookiecutter.include_cli == 'yes' %}    'click < 2.1.0'{% endif %}
-    ],
-    {% if cookiecutter.include_cli == 'yes' %}entry_points={
+    install_requires=io.open('requirements/runtime.txt').readlines(),
+    entry_points={
         'console_scripts': [
             '{{cookiecutter.repo_name}} = {{cookiecutter.repo_name}}.cli:main',
         ],
-    },{% endif %}
+    },
     license=open('LICENSE').read(),
 )
-
