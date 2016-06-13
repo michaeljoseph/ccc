@@ -8,4 +8,3 @@ __version__ = '0.0.1'
 
 def {{cookiecutter.repo_name}}():
     return 'Hello World!'
-
