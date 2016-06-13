@@ -25,6 +25,7 @@ pip-log.txt
 .coverage
 .tox
 nosetests.xml
+.cache
 
 # Translations
 *.mo
@@ -44,3 +45,5 @@ docs/_build
 # Cookiecutter
 output/
 boilerplate/
+
+.DS_Store
