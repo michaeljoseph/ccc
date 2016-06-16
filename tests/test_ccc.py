@@ -28,7 +28,7 @@ def test_github_url(cookies):
     assert url in module_init
 
 
-def test_install_requirements(cookies):
+def test_requirements_sdist(cookies):
     result = cookies.bake()
     assert result.exit_code == 0 and result.project.isdir()
 
