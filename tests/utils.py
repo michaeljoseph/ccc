@@ -24,12 +24,14 @@ def run_commands_inside_dir(directory_path, commands):
     Run a series of commands from inside a given directory, returning the
     exit statuses
 
-    :param directory_path: String, path of the directory the commands is being run in.
+    :param directory_path: path of the directory the commands are being run in.
     :param commands: Command that will be executed
     """
     command_exit_codes = []
     with inside_dir(directory_path):
         for command in commands:
-            command_exit_codes.append(subprocess.check_call(shlex.split(command)))
+            command_exit_codes.append(
+                subprocess.check_call(shlex.split(command))
+            )
 
     return command_exit_codes

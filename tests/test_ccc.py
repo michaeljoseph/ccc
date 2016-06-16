@@ -38,4 +38,7 @@ def test_requirements_sdist(cookies):
         'venv/bin/py.test',
         'venv/bin/python setup.py sdist bdist_wheel',
     ]
-    assert run_commands_inside_dir(str(result.project), commands) == [0,0,0,0]
+    assert run_commands_inside_dir(
+        str(result.project),
+        commands
+    ) == [0, 0, 0, 0]
