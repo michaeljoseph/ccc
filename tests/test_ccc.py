@@ -28,6 +28,11 @@ def test_github_url(cookies):
     assert url in module_init
 
 
+def test_cli_exists(cookies):
+    result = cookies.bake()
+    assert result.project.join('skeletor/cli.py').exists()
+
+
 def test_requirements_sdist(cookies):
     result = cookies.bake()
     assert result.exit_code == 0 and result.project.isdir()
