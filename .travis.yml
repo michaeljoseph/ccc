@@ -1,12 +1,12 @@
 language: python
 python:
-    - "2.6"
     - "2.7"
     - "pypy"
+    - "3.4"
+    - "3.5"
 install:
     - pip install -r requirements.txt
 script:
+    - python -m json.tool < cookiecutter.json
     - py.test
-    - flake8 setup.py {{cookiecutter.repo_name}} tests
-after_success:
-  - coveralls
+    - flake8 tests
