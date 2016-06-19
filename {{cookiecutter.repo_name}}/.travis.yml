@@ -4,9 +4,9 @@ python:
     - "pypy"
     - "3.5"
 install:
-    - pip install -r requirements.txt
+    - pip install --upgrade -r requirements.txt
 script:
     - py.test
     - flake8 setup.py {{cookiecutter.repo_name}} tests
 after_success:
-  - coveralls
+    - codecov
