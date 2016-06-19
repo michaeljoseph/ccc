@@ -10,6 +10,6 @@ script:
     - flake8 tests
     - cookiecutter . --no-input
     - cd skeletor
-    - mkvirtualenv venv
+    - virtualenv venv
     - venv/bin/pip install -r requirements.txt
     - venv/bin/py.test
