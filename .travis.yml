@@ -8,3 +8,8 @@ script:
     - python -m json.tool < cookiecutter.json
     - py.test
     - flake8 tests
+    - cookiecutter . --no-input
+    - cd skeletor
+    - mkvirtualenv venv
+    - venv/bin/pip install -r requirements.txt
+    - venv/bin/py.test
