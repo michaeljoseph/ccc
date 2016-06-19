@@ -1,9 +1,9 @@
 changes < 1.0.0
+codecov < 3.0.0
 flake8 < 3.0.0
-pytest-mock < 1.0.0
-pytest-cov < 1.8.0 
-pytest-watch < 5.0.0
-python-coveralls < 3.0.0
+pytest < 3.0.0
+pytest-mock < 2.0.0
+pytest-cov < 3.0.0
 sphinx < 2.0.0
 sphinx-bootstrap-theme < 1.0.0
 travis-solo < 1.0.0
